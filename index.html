@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+	<script type="text/javascript" src="http://www.designedbyaturtle.co.uk/demos/horizontal-scrolling/jquery.mousewheel.min.js"></script>
+</head>
+<body>
+	<div class="wrap">
+		<div class="header">
+			<h1>Header</h1>
+		</div>
+		<div class="main m-blue">
+			Hello, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis praesentium eligendi laborum odio iste culpa dignissimos, ipsam necessitatibus explicabo nostrum quod non soluta, accusantium earum. Perferendis hic laudantium excepturi animi.
+			<div class="content">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex ab fugit molestias commodi dicta ratione! Labore doloribus accusamus deserunt, ea minus omnis officia? Praesentium illo natus delectus eos nam soluta!
+				
+			</div>
+		</div>
+		<div class="main m-green">
+			Hello, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis praesentium eligendi laborum odio iste culpa dignissimos, ipsam necessitatibus explicabo nostrum quod non soluta, accusantium earum. Perferendis hic laudantium excepturi animi.
+		</div>
+		<div class="main m-red">
+			Hello, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis praesentium eligendi laborum odio iste culpa dignissimos, ipsam necessitatibus explicabo nostrum quod non soluta, accusantium earum. Perferendis hic laudantium excepturi animi.
+		</div>
+		<div class="footer">
+			sldsadasdsa
+		</div>
+	</div>
+	<script type="text/javascript">
+	$(document).ready(function() {
+    $('html, body, *').mousewheel(function(e, delta) {
+        this.scrollLeft -= (delta * 40);
+        e.preventDefault();
+    });
+});
+	</script>
+
+
+	<!-- Fullpagejs -->
+	
+	<!-- End Fullpage js -->
+</body>
+</html>
